@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practiceAngular';
+  title = 'Hello World';
+
+  getMin(a: number, b: number){
+    if(a < b){
+      return a;
+    } else {
+      return b;
+    }
+  }
 }
